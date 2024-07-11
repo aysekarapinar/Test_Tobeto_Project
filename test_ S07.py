@@ -119,8 +119,8 @@ class Test_Training_Panel:
         search.send_keys("Dr.Ecmel Ayral’dan Hoşgeldin Mesajı")
         listBox=WebDriverWait(self.driver, 10).until(EC.visibility_of_element_located((By.XPATH, globalConstant.listButton)))
         listBox.click()
-        #searchList=WebDriverWait(self.driver, 10).until(EC.visibility_of_element_located((By.XPATH,globalConstant.searchList))).click()
-        #searchList.send_keys("İstanbul Kodluyor")
+        searchList=WebDriverWait(self.driver, 10).until(EC.visibility_of_element_located((By.XPATH,globalConstant.searchList))).click()
+        searchList.send_keys("İstanbul Kodluyor")
         alphabetList=WebDriverWait(self.driver, 10).until(EC.visibility_of_element_located((By.XPATH,globalConstant.alphabetListButton)))
         alphabetList.click()
 
